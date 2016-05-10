@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fundamentals Part 1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var x = [3,5,'Dojo', 'rocks', 'Michael', 'Sensei'];
+
+	function logEach(x) {
+	 	for(var i = 0; i < x.length; i++){
+	 		console.log(x[i]);
+	 	}
+	 	x.push(100);
+	 	var z = [2,6, "Coding", "Janatbek"];
+	 	x.push(z);
+	 	console.log(x)
+	}
+	logEach(x);
+
+	function sum () {
+		var finalSum = 0;
+		for (var i = 0; i < 500; i++) {
+			finalSum += i;
+		}
+		return finalSum;
+	}
+	sum();
+
+
+var x = [1, 5, 90, 25, -3, 0]
+
+function minNum (x) {
+	var min = 0;
+		for (var i = 0; i < x.length; i++) {
+				
+			if(min > x[i]){
+				min = x[i];
+				return min;
+			}
+		}
+	}
+	minNum(x)
+
+
+
+var x = [1, 5, 90, 25, -3, 0]
+
+function average (x) {
+	var avg = 0;
+		for (var i = 0; i < x.length; i++) {
+			avg += i;
+		}
+		avg /= x.length;
+		return avg
+	}
+	average(x);
+
+
+	var person = {};
+
+	person = {
+		name: "Trey",
+		distance_traveled: 0,
+		say_name:  function() {
+			alert(this.name);
+		},
+		say_something: function (word) {
+			console.log(this.name + " says " + word);
+		},
+		walk: function(){
+			alert(this.name + " is walking");
+			this.distance_traveled += 3;
+			console.log(this.distance_traveled);
+		},
+		run: function() {
+			alert(this.name + " is running ");
+			this.distance_traveled += 10;
+			console.log(this.distance_traveled);
+		},
+		crawl: function() {
+			alert(this.name + " is crawling");
+			this.distance_traveled += 1;
+			console.log(this.distance_traveled);
+		}
+
+	};
+
+
+</script>
+
+</body>
+</html>
