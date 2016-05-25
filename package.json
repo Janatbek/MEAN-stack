@@ -1,0 +1,19 @@
+{
+  "name": "yellow_belt_exam",
+  "version": "1.0.0",
+  "description": "this is a exam for yellow belt in web dev, languages used HTML5, CSS3, sass, jquery, javascript, gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janatbek/MEAN-stack.git"
+  },
+  "author": "Janatbek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Janatbek/MEAN-stack/issues"
+  },
+  "homepage": "https://github.com/Janatbek/MEAN-stack#readme"
+}
