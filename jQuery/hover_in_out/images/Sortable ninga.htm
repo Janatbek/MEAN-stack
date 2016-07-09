@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///Users/janatbeksharsheyev/Sites/codingdojo/jQuery/draggable%20ninja/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Sortable ninga</title>
+  <link rel="stylesheet" type="text/css" href="./Sortable ninga_files/jquery-ui.css">
+  <script src="./Sortable ninga_files/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="./Sortable ninga_files/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+   <script>
+   $(document).ready(function(){
+  
+
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+
+   })
+  
+  </script>
+  <style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+    #wrapper{
+      margin: 0 auto;
+      width: 960px;
+    }
+    ul li{
+      list-style: none;
+      width: 368px;
+    }
+    #wrapper ul lil{
+      border: none;
+      background: transparent;
+    }
+  </style>
+
+</head>
+<body>
+<div id="wrapper">
+  <ul id="sortable" class="ui-sortable">
+    
+    <li class="ui-sortable-handle"><img src="./Sortable ninga_files/sort2.png"></li><li class="ui-sortable-handle"><img src="./Sortable ninga_files/sort4.png"></li><li class="ui-sortable-handle"><img src="./Sortable ninga_files/sort1.png"></li>
+    <li class="ui-sortable-handle"><img src="./Sortable ninga_files/sort3.png"></li>
+    
+    <li class="ui-sortable-handle"><img src="./Sortable ninga_files/sort5.png"></li>
+   </ul>
+
+</div>
+
+	
+
+</body></html>

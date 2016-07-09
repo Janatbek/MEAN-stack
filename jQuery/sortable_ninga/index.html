@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sortable ninga</title>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+   <script>
+   $(document).ready(function(){
+  
+
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+
+   })
+  
+  </script>
+  <style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    #wrapper{
+      margin: 0 auto;
+      width: 960px;
+      padding-top: 50px;
+    }
+    ul li{
+      list-style: none;
+      width: 368px;
+    }
+
+  </style>
+
+</head>
+<body>
+<div id="wrapper">
+  <ul id="sortable">
+    <li><img src="images/sort1.png"></li>
+    <li><img src="images/sort2.png"></li>
+    <li><img src="images/sort3.png"></li>
+    <li><img src="images/sort4.png"></li>
+    <li><img src="images/sort5.png"></li>
+   </ul>
+
+</div>
+
+  
+</body>
+</html>

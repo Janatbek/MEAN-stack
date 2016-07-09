@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Document</title>
+	 <link rel="stylesheet" href="style.css">
+	 <style type="text/css">
+	 	*{
+	 		margin:0;
+	 		padding: 0;
+	 		vertical-align: top;
+	 	}
+	 	#wrapper{
+	 		width: 1024px;
+			margin: 0 auto;
+		}
+	 	header{
+	 		background: #DDDDDD;
+	 	}
+	 	nav ul {
+	 		margin-top: 10px;
+	 	}
+	 	nav ul li {
+	 		display: inline-block;
+	 		background: #DDDDDD;
+	 		height: 30px;
+	 		line-height:  30px;
+	 		padding: 0 5px 0 5px;
+	 	}
+	 	main{
+	 		margin-top: 20px;
+	 	}
+	 	main div{
+	 		width: 200px;
+	 		display: inline-block;
+	 		margin-right: 30px;
+	 		padding: 5px;
+	 	}
+			 	/* Small sized screens */
+		@media only screen and (max-width: 480px) {
+		   nav{display: none;}
+		}
+
+		/* Medium sized screens */
+		@media only screen and (min-width: 481px) {
+			/*nav{display: none;}*/
+		    
+		}
+		@media only screen and (max-width: 768px) {
+			nav{display: none;}
+			.mid_3{width:240px; padding: 10px;}
+			.bottom{clear: both;width: 100%;}
+		    
+		}
+		/* Large sized screens */
+		@media only screen and (min-width: 1024px) {
+		   
+		}
+
+	 </style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Header</h1>
+			<h4>Subtitle</h4>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Pricing</a></li>
+				<li><a href="">Something...</a></li>
+				<li><a href="">Something more...</a></li>
+				<li><a href="">Something even more...</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class=" big_4 mid_3">
+				<h5>Coffee Ipsum</h5>
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque convallis, risus ut viverra ultrices, tellus felis luctus dolor, ac egestas erat felis et nisi. Curabitur eu dolor odio. Aliquam sodales ipsum ac sem porttitor, sit amet scelerisque arcu cursus. Fusce id auctor erat, tincidunt iaculis quam. Phasellus eu mauris in ipsum mollis elementum. Aliquam pharetra, eros et mollis dignissim, odio nisl suscipit ex, at bibendum risus ipsum at eros. Nullam vulputate varius sapien, sit amet consequat sapien ultrices quis. Cras sollicitudin ipsum eu ipsum euismod, vitae semper sapien ornare. Nunc in nulla non turpis dictum aliquam.</p>
+			</div>
+			<div class="big_4 mid_3">
+				<h5>Lorem Ipsum</h5>
+				<p>Fusce sit amet rhoncus dolor. Mauris mollis vel nibh non aliquet. Fusce id molestie quam. Nunc maximus consectetur justo quis eleifend. Maecenas massa enim, efficitur quis convallis id, posuere eu turpis. Aenean faucibus ornare tincidunt. Sed a nibh id tellus condimentum gravida. Sed non lobortis nunc, eget finibus sapien. Praesent ultricies eu leo a pellentesque. Sed luctus urna nec elit tempus venenatis. Sed commodo luctus dignissim. Nunc laoreet vulputate nisl. Quisque blandit nulla non porta consectetur. Nam a placerat risus. Quisque ultrices lectus id cursus semper.</p>
+			</div>
+			<div class="big_4 mid_3">
+				<h5>Baby Ipsum</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+			</div>
+			<div class="bottom">
+				<h5>Zombie Ipsum</h5>
+				<p>Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet.</p>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

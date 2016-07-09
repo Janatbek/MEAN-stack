@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date Validation</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("connected");
+
+			$("#datepicker").datepicker();
+
+			$( "#from" ).datepicker({
+		      defaultDate: "+1w",
+		      changeMonth: true,
+		      numberOfMonths: 3,
+		      onClose: function( selectedDate ) {
+		        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+		      }
+		    });
+		    $( "#to" ).datepicker({
+		      defaultDate: "+1w",
+		      changeMonth: true,
+		      numberOfMonths: 3,
+		      onClose: function( selectedDate ) {
+		        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		      }
+		    });
+		    
+	    	$('form').submit(function(){
+	    		$('form').validate();
+	    		$('form').valid();
+				var name = $('#first_name').val().toUpperCase();
+				var last = $('#last_name').val().toUpperCase();
+				var from = $('#from').val();
+				var to = $('#from').val();
+				var message = "Thanks " + name + " " + last + "! Your cruise leave on " + from + " and returns on " + to +"!"
+				
+				alert(message);
+				return false;
+
+			})
+		    
+			
+
+		})
+	</script>
+	<style type="text/css">
+		form label, .btn{
+			display: block;	
+		}
+		input{
+			margin-bottom: 15px;
+		}
+		.form-control{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<form class="container-fluid">
+			<label for="first_name">First Name :</label>
+			<input class="form-control" type="text" name="first_name" id="first_name" minlength="2" required>
+			<label for="last_name">Last Name :</label>
+			<input class="form-control" type="text" name="last_name" id="last_name" required>
+			
+			<label for="from">From</label>
+			<input class="form-control" type="text" id="from" name="from">
+			<label for="to">To</label>
+			<input class="form-control" type="text" id="to" name="to">
+
+			<input class="btn btn-primary" type="submit" name="submit" value="Check dates!">
+		</form>
+	</div>
+</body>
+</html>

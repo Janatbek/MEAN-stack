@@ -1,0 +1,9 @@
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+img{
+	margin:0 auto;
+	display: block;
+	margin-bottom: 5px;
+}

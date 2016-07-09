@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ninja To Cat</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('img:first').click(function(event){$(this).attr('src', 'img/cat0.png')
+			});
+			$('img:nth-child(2)').click(function(event){
+				$(this).attr('src', 'img/cat1.png')
+			});
+			$('img:nth-child(3)').click(function(event){
+				$(this).attr('src', 'img/cat2.png')
+			});
+			$('img:nth-child(4)').click(function(event){
+				$(this).attr('src', 'img/cat3.png')
+			});
+			$('img:nth-child(5)').click(function(event){
+				$(this).attr('src', 'img/cat4.png')
+			});
+
+			
+		});
+
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<img src="img/ninja0.png" alt="cats head">
+		<img src="img/ninja1.png" alt="cats head">
+		<img src="img/ninja2.png" alt="cats head">
+		<img src="img/ninja3.png" alt="cats head">
+		<img src="img/ninja4.png" alt="cats head">
+	</div>
+
+</body>
+</html>
