@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var fCache = [1];
+        function fFactorial(n){
+            if (n < 0){
+                console.log("eeeeeeeeee-diot!");
+            }
+            while(n >= fCache.length) {
+                fCache[fCache.length] = fCache.length * fCache[fCache.length -1]
+            }
+            return fCache[n];
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
